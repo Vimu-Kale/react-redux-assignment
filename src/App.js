@@ -6,6 +6,7 @@ import { EmployeeView } from "./features/employee/EmployeeView";
 import { UserView } from "./features/user/UserView";
 import { FeatureContainer } from "./features/featureContainer/FeatureContainer";
 import { EmployeeUpdateForm } from "./features/employee/EmployeeUpdateForm";
+import { PostView } from "./features/post/postView";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/employeeview" element={<EmployeeView />} />
         <Route path="/employeeupdateform" element={<EmployeeUpdateForm />} />
         <Route path="/userview" element={<UserView />} />
+        <Route path="/postview" element={<PostView />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>

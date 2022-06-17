@@ -13,6 +13,10 @@ export const FeatureContainer = () => {
     navigate("/userview");
   };
 
+  const onHandleAsyncCRUD = () => {
+    navigate("/postview");
+  };
+
   return (
     <div>
       <h1>REACT-REDUX</h1>
@@ -38,6 +42,18 @@ export const FeatureContainer = () => {
         }}
       >
         Async Fetch Users
+      </Button>
+      <br />
+      <Button
+        variant="contained"
+        color="primary"
+        sx={{ height: "3rem", width: "20rem", mt: 5 }}
+        style={{ fontFamily: "Poppins", fontSize: "large", fontWeight: "bold" }}
+        onClick={() => {
+          onHandleAsyncCRUD();
+        }}
+      >
+        Async CRUD Operations
       </Button>
     </div>
   );

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Vimu-Kale/react-redux-assignment/static/css/main.8ea11299.css",
+    "main.js": "/Vimu-Kale/react-redux-assignment/static/js/main.9332187c.js",
+    "index.html": "/Vimu-Kale/react-redux-assignment/index.html",
+    "main.8ea11299.css.map": "/Vimu-Kale/react-redux-assignment/static/css/main.8ea11299.css.map",
+    "main.9332187c.js.map": "/Vimu-Kale/react-redux-assignment/static/js/main.9332187c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ea11299.css",
+    "static/js/main.9332187c.js"
+  ]
+}

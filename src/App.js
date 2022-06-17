@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, Navigate } from "react-router-dom";
+
+import { EmployeeForm } from "./features/employee/EmployeeForm";
+import { EmployeeView } from "./features/employee/EmployeeView";
+import { UserView } from "./features/user/UserView";
+import { FeatureContainer } from "./features/featureContainer/FeatureContainer";
+import { EmployeeUpdateForm } from "./features/employee/EmployeeUpdateForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<FeatureContainer />} />
+        <Route path="/employeeform" element={<EmployeeForm />} />
+        <Route path="/employeeview" element={<EmployeeView />} />
+        <Route path="/employeeupdateform" element={<EmployeeUpdateForm />} />
+        <Route path="/userview" element={<UserView />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </div>
   );
 }
